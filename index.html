@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Calculator</title>
+    <title>Easy Image Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
-    
+    <main>
+        <h1>Easy Image Calculator</h1>
+        <form onsubmit="calculate(); return false">
+            <table>
+                <tr>
+                    <td>Current Image:</td>
+                    <td><input id="current-width" type="number" placeholder="Width" required></td>
+                    <td>x</td>
+                    <td><input id="current-height" type="number" placeholder="Height" required></td>
+                </tr>
+                <tr>
+                    <td>Resize Image:</td>
+                    <td><input id="new-width" type="number" placeholder="New width" required></td>
+                    <td>x</td>
+                    <td><button>Get new height!</button></td>
+                </tr>
+            </table>
+        </form>
+        <div id="show-result"></div>
+    </main>
 </body>
+
 </html>
