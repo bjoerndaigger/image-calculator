@@ -14,20 +14,22 @@
     <main>
         <h1>Easy Image Calculator</h1>
         <form onsubmit="calculate(); return false">
-            <table>
-                <tr>
-                    <td>Current Image:</td>
-                    <td><input id="current-width" type="number" placeholder="Width" required></td>
-                    <td>x</td>
-                    <td><input id="current-height" type="number" placeholder="Height" required></td>
-                </tr>
-                <tr>
-                    <td>Resize Image:</td>
-                    <td><input id="new-width" type="number" placeholder="New width" required></td>
-                    <td>x</td>
-                    <td><button>Get new height!</button></td>
-                </tr>
-            </table>
+            <div class="container">
+                <div class="title">Current Image:</div>
+                <div>
+                    <input id="current-width" type="number" placeholder="Width" required>
+                    <span>x</span>
+                    <input id="current-height" type="number" placeholder="Height" required>
+                </div>
+            </div>
+            <div class="container">
+                <div class="title">Resize Image:</div>
+                <div>
+                    <input id="new-width" type="number" placeholder="New width" required>
+                    <span>x</span>
+                    <button>Get new height!</button>
+                </div>
+            </div>
         </form>
         <div id="show-result"></div>
     </main>
